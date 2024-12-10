@@ -1,1 +1,1 @@
-# entrega_3
+Crear un entorno virtual, y ir a cualquiera de los paths listados y elegir la funcionalidad deseada con la barra de navegacion. Preferiblemente usar las de agregar primero y finalmente las listas y buscar profesor.
