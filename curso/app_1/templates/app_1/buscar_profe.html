@@ -1,0 +1,27 @@
+{% extends "app_1/base.html" %}
+
+{% block title %}
+Formulario - Buscar Profesor
+{% endblock %}
+
+{% block content %}
+
+<h1>Buscar Profe</h1>
+<form action="/buscar_profe/" method="post">  <!-- Define la URL donde se enviará el formulario -->
+    {% csrf_token %}  <!-- Protección contra ataques CSRF -->
+    {{ form.as_p }}  <!-- Renderiza el formulario con los campos envueltos en etiquetas <p> -->
+    <button type="submit">Enviar</button>  <!-- Botón para enviar el formulario -->
+</form>
+
+<h1>RESULTADOS</h1>
+<ul>
+    {% if resultados %}
+        {% for r in resultados %}
+            <li>{{ r.nombre }} {{ r.apellido }}</li>
+        {% endfor %}
+    {% else %}
+    <li>No se encontraron resultados.</li>
+    {% endif %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "app_1/base.html" %}
+
+{% block title %}
+Lista de Entregas
+{% endblock %}
+
+{% block content %}
+
+<h1>Lista de Entregas</h1>
+<ul>
+    {% for e in entregas %}
+        <li>{{ e.nombre }} {{ e.fecha_de_entrega }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

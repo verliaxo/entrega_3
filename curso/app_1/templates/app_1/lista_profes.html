@@ -1,0 +1,16 @@
+{% extends "app_1/base.html" %}
+
+{% block title %}
+Lista de Profesores
+{% endblock %}
+
+{% block content %}
+
+<h1>Lista de Profesores</h1>
+<ul>
+    {% for p in profesores %}
+        <li>{{ p.nombre }} {{ p.apellido }} {{ p.matricula }} {{ p.materia }} {{ p.edad }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

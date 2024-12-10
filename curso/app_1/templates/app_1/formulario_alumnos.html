@@ -1,0 +1,16 @@
+{% extends "app_1/base.html" %}
+
+{% block title %}
+Formulario - Agregar Alumno
+{% endblock %}
+
+{% block content %}
+
+<h1>Agregar Alumno</h1>
+<form action="/formulario_alumnos/" method="post">  <!-- Define la URL donde se enviará el formulario -->
+    {% csrf_token %}  <!-- Protección contra ataques CSRF -->
+    {{ form.as_p }}  <!-- Renderiza el formulario con los campos envueltos en etiquetas <p> -->
+    <button type="submit">Enviar</button>  <!-- Botón para enviar el formulario -->
+</form>
+
+{% endblock %}

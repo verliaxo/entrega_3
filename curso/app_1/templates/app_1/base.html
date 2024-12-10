@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Título por defecto{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'lista_profes' %}">Profesores</a>
+                <a class="navbar-brand" href="{% url 'formulario_profes' %}">INGRESAR NUEVO PROFE</a>
+                <a class="navbar-brand" href="{% url 'buscar_profe' %}">Buscar Profe</a>
+                <a class="navbar-brand" href="{% url 'lista_alumnos' %}">Alumnos</a>
+                <a class="navbar-brand" href="{% url 'formulario_alumnos' %}">INGRESAR NUEVO ALUMNO</a>
+                <a class="navbar-brand" href="{% url 'lista_entregas' %}">Entregas</a>
+                <a class="navbar-brand" href="{% url 'formulario_entregas' %}">INGRESAR NUEVA ENTREGA</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Contenido específico de cada página -->
+        {% endblock %}
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 My Site</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
