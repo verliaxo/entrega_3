@@ -1,1 +1,1 @@
-Crear un entorno virtual, y ir a cualquiera de los paths listados y elegir la funcionalidad deseada con la barra de navegacion. Preferiblemente usar las de agregar primero y finalmente las listas y buscar profesor.
+Crear un entorno virtual en la carpeta curso, instalar Django, hacer las migraciones, y ir a cualquiera de los paths listados y elegir la funcionalidad deseada con la barra de navegacion. Preferiblemente usar las de agregar primero y finalmente las listas y buscar profesor. Para las fechas, usar el formato Mes/dia/año
